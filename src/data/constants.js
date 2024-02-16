@@ -82,20 +82,20 @@ export const skills = [
         name: "Supabase",
         image: "https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg",
       },
+      {
+        name: "C++",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+      },
     ],
   },
   {
-    title: "Others",
+    title: "Tools",
     skills: [
       {
         name: "Git",
         image:
           "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
-      },
-      {
-        name: "C++",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
       },
       {
         name: "GitHub",
@@ -124,7 +124,6 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "",
     role: "Technical Head",
     company: "SPADE",
     date: "Aug 2023 - Present",
@@ -133,7 +132,6 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "",
     role: "Student Intern",
     company: "JSSATE",
     date: "Nov 2022 - Dec 2022",
@@ -199,7 +197,8 @@ export const projects = [
     type: "Tour Booking Website",
     description:
       "Developed a custom API built upon REST API architecture for finding, booking tours, and handling sign up & login authentication and authorization. Incorporate robust error handling functionalities and payment gateway.",
-    image: "../images/Projects/Natours.png",
+    image:
+      "https://raw.githubusercontent.com/gkunal5802/portfolio/master/src/images/Projects/Natours.png",
     tags: ["NodeJs", "MongoDB", "ExpressJs", "PUG", "REST API"],
     github: "https://github.com/gkunal5802/natours",
     webapp: "#",
@@ -210,7 +209,8 @@ export const projects = [
     type: "Hotel Booking Website",
     description:
       "Manage bookings of guests(arriving, arrived, departed). Dashboard with statistics and charts of sales, net bookings, profit. Sign up and login authentication. Enable user to change personal details.",
-    image: "/images/Projects/wild-oasis.png",
+    image:
+      "https://github.com/gkunal5802/portfolio/blob/master/src/images/Projects/wild-oasis.png?raw=true",
     tags: ["ReactJs", "React Query", "Context API", "Supabase"],
     github: "https://github.com/gkunal5802/the-wild-oasis",
     webapp: "https://the-wild-oasis-gkunal.netlify.app/login",
@@ -221,7 +221,8 @@ export const projects = [
     type: "Social Media Website",
     description:
       "Seemlessely Create, Like, Comment posts, Upload pictures and captions. Authenticated user sign up and sign in.Create friends and watch post with filters.",
-    image: "images/Projects/socialScape.jpg",
+    image:
+      "https://github.com/gkunal5802/portfolio/blob/master/src/images/Projects/social-scape.png?raw=true",
     tags: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "Tailwindcss"],
     github: "https://github.com/gkunal5802/socialscape",
     webapp: "https://socialscape-gkunal05.netlify.app",
@@ -233,7 +234,7 @@ export const projects = [
     description:
       "Developed a self ordering interface. SPA enabling user to add/delete items into/from cart, generate invoice, also search previous order with orderId.",
     image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+      "https://github.com/gkunal5802/portfolio/blob/master/src/images/Projects/pizza-ref.png?raw=true",
     tags: ["ReactJs", "Redux", "useReducers", "Tailwindcss"],
     github: "https://github.com/gkunal5802/pizza-ref",
     webapp: "https://pizza-ref-gkunal05.netlify.app/",
@@ -245,7 +246,7 @@ export const projects = [
     description:
       "Build a quizzing interface with useReducer hook and Context API. A minimalistic quiz UI with time based submission. It displays the correct options upon answering the question along with total score by user at the end of quiz.",
     image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+      "https://github.com/gkunal5802/portfolio/blob/master/src/images/Projects/react-quiz.png?raw=true",
     tags: ["React", "useReducers", "Context API"],
     github: "https://github.com/gkunal5802/quiz-app",
     webapp: "https://react-quiz-gkunal05.netlify.app/",
@@ -257,7 +258,7 @@ export const projects = [
     description:
       "Travel away is built using basic react and useState hook. It is variation of todo App. User uses travel away to create a list of items to be carried during trips.",
     image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+      "https://github.com/gkunal5802/portfolio/blob/master/src/images/Projects/Travel-away.png?raw=true",
     tags: ["React", "useReducers", "Context API"],
     github: "https://github.com/gkunal5802/travel-away",
     webapp: "https://travel-todo-gkunal05.netlify.app/",

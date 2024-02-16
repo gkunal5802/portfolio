@@ -1,38 +1,3 @@
-// import {
-//   Route,
-//   RouterProvider,
-//   createBrowserRouter,
-//   createRoutesFromElements,
-// } from "react-router-dom";
-// import Layout from "./Pages/Layout";
-// import Home from "./Pages/Home";
-// import Education from "./Pages/Education";
-// import Skills from "./Pages/Skills";
-// import Projects from "./Pages/Projects";
-// import Contact from "./Pages/Contact";
-// import { ThemeProvider } from "styled-components";
-// import { darkTheme, lightTheme } from "./utils/themes";
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path="/" element={<Layout />}>
-//       <Route path="" element={<Home />} />
-//       <Route path="education" element={<Education />} />
-//       <Route path="skills" element={<Skills />} />
-//       <Route path="projects" element={<Projects />} />
-//       <Route path="contact" element={<Contact />} />
-//     </Route>
-//   )
-// );
-// function App() {
-//   return (
-//     <ThemeProvider theme={darkTheme}>
-//       <RouterProvider router={router} />;
-//     </ThemeProvider>
-//   );
-// }
-// export default App;
-
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
@@ -42,7 +7,7 @@ import Education from "./Pages/Education";
 import Experience from "./Pages/Experience";
 import Footer from "./Pages/Footer";
 import Home from "./Pages/Home";
-import Header from "./Pages/Header/Header";
+import Header from "./Pages/Header";
 import ProjectDetails from "./components/ProjectDetails";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
