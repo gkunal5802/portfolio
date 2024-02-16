@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact";
 import Education from "./Pages/Education";
 import Experience from "./Pages/Experience";
 import Footer from "./Pages/Footer";
-import Home from "./Pages/Home";
+import Home from "./Pages/Hero";
 import Header from "./Pages/Header";
 import ProjectDetails from "./components/ProjectDetails";
 import Projects from "./Pages/Projects";
