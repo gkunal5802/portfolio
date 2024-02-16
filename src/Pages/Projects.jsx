@@ -1,12 +1,5 @@
-/* eslint-disable */
-
-import React from "react";
-import { useState } from "react";
-import { projects } from "../data/constants";
-import ProjectCard from "../components/Cards/ProjectCards";
-
 import styled from "styled-components";
-import _default from "../themes/default";
+import ProjectCards from "../components/Project/ProjectCards";
 
 const Container = styled.div`
   background: linear-gradient(
@@ -62,24 +55,6 @@ const Desc = styled.div`
   }
 `;
 
-const CardContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-gap: 32px;
-  // grid-auto-rows: minmax(100px, auto);
-  // @media (max-width: 960px) {
-  //     grid-template-columns: repeat(2, 1fr);
-  // }
-  // @media (max-width: 640px) {
-  //     grid-template-columns: repeat(1, 1fr);
-  // }
-`;
-
 const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="projects">
@@ -89,16 +64,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           I have worked on a wide range of projects. Here are some of my
           projects.
         </Desc>
-        <CardContainer>
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              project={project}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
-          ))}
-        </CardContainer>
+        <ProjectCards openModal={openModal} setOpenModal={setOpenModal} />
       </Wrapper>
     </Container>
   );

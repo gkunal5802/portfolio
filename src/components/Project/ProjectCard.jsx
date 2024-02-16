@@ -1,5 +1,6 @@
 /* eslint-disable */
 import styled from "styled-components";
+import TechTags from "./TechTags";
 
 const Button = styled.button`
   display: none;
@@ -45,24 +46,6 @@ const Image = styled.img`
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
-const Tags = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-`;
-
-const Tag = styled.span`
-  font-size: 12px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.primary};
-  background-color: ${({ theme }) => theme.primary + 15};
-  padding: 2px 8px;
-  border-radius: 10px;
-`;
-
 const Details = styled.div`
   width: 100%;
   display: flex;
@@ -105,43 +88,18 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
-`;
-
-const ProjectCards = ({ project, setOpenModal }) => {
+const ProjectCard = ({ project, setOpenModal }) => {
   return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
+    <Card onClick={() => setOpenModal({ state: true, project })}>
       <Image src={project.image} />
-      <Tags>
-        {project.tags?.map((tag, index) => (
-          <Tag key={tag}>{tag}</Tag>
-        ))}
-      </Tags>
+      <TechTags />
       <Details>
         <Title>{project.title}</Title>
         <Type>{project.type}</Type>
         <Description>{project.description}</Description>
       </Details>
-      <Members>
-        {project.member?.map((member) => (
-          <Avatar key={member?.img} src={member.img} />
-        ))}
-      </Members>
-      {/* <Button>View Project</Button> */}
     </Card>
   );
 };
 
-export default ProjectCards;
+export default ProjectCard;

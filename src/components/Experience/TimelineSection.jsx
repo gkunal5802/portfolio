@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -7,7 +6,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { experiences } from "../../data/constants";
-import ExperienceCard from "../Cards/ExperienceCard";
+import ExperienceCard from "./ExperienceCard";
 
 const StyledTimeline = styled.div`
   width: 100%;
