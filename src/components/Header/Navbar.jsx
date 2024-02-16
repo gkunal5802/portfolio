@@ -28,7 +28,6 @@ const NavLink = styled.a`
 function Navbar() {
   return (
     <NavItems>
-      <NavLink href="#about">About</NavLink>
       <NavLink href="#skills">Skills</NavLink>
       <NavLink href="#experience">Experience</NavLink>
       <NavLink href="#projects">Projects</NavLink>

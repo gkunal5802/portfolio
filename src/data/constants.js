@@ -11,7 +11,7 @@ export const Bio = {
   insta: "https://www.instagram.com/gkunal05/",
 };
 
-export const skills = [
+export const skillCategories = [
   {
     title: "Frontend",
     skills: [

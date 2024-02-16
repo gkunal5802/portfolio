@@ -92,12 +92,12 @@ const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project })}>
       <Image src={project.image} />
-      <TechTags />
       <Details>
         <Title>{project.title}</Title>
         <Type>{project.type}</Type>
         <Description>{project.description}</Description>
       </Details>
+      <TechTags tags={project.tags} />
     </Card>
   );
 };

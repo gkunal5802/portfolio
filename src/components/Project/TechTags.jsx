@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { projects } from "../../data/constants";
+import styled, { useTheme } from "styled-components";
 
 const Tags = styled.div`
   width: 100%;
@@ -19,10 +18,12 @@ const Tag = styled.span`
   border-radius: 10px;
 `;
 
-function TechTags() {
+function TechTags({ tags }) {
+  const theme = useTheme();
+
   return (
     <Tags>
-      {projects.tags?.map((tag, index) => (
+      {tags.map((tag, index) => (
         <Tag key={index}>{tag}</Tag>
       ))}
     </Tags>
